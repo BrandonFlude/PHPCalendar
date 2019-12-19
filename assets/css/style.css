@@ -1,0 +1,108 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+@media (max-width: 480px){
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    font-size: 10px;
+    background-color: #f5f5f5;
+  }
+}
+
+@media (min-width: 480px){
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+  }
+}
+
+p.align-vertical {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+}
+
+.add-space {
+  margin-top: 75px;
+}
+
+a.fake-link {
+  cursor: pointer;
+}
+
+.fake-button {
+  cursor: pointer;
+}
+
+@media (max-width: 480px){
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+    font-size: 20px;
+  }
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 480px){
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+    font-size: 40px;
+  }
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    font-size: 38px;
+    margin: 0;
+  }
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.days li .has-event {
+  padding: 5px;
+  background: #008348;
+  color: white !important
+}
